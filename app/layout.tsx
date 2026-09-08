@@ -2,11 +2,20 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://apportion-allocation-lab.skaihai.chatgpt.site'),
-  title: 'APPORTION — Who gets the next seat?',
-  description: 'An exact-arithmetic allocation lab. Compare proportional rules, inspect each award and explore the effects of adding one seat.',
+  metadataBase: new URL(
+    'https://skailiner-apportion.static.hf.space/index.html',
+  ),
+  title: 'APPORTION — Share limited places. Explain the choices.',
+  description:
+    'Compare three proportional allocation rules for your groups. Save inputs, inspect exact ties and take a clear discussion brief to the people deciding.',
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }

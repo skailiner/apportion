@@ -11,7 +11,7 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
-    "test": "node --experimental-strip-types tests/model.test.mjs",
+    "test": "node --experimental-strip-types tests/model.test.mjs && node --experimental-strip-types --test tests/consumer.test.mjs",
     "lint:app": "oxlint app lib",
     "typecheck": "tsc --noEmit"
   },

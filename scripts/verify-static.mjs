@@ -19,6 +19,7 @@ for(const file of files){
   if(/\.(html|js|json|rsc|css)$/.test(file)){
     const text=readFileSync(file,'utf8');
     assert.ok(!credentialPattern.test(text),'Credential-like content in '+rel);
+    assert.ok(!/(?:appgprj|appgver|appgdep)_[A-Za-z0-9]+/.test(text),'Private hosting identifiers in '+rel);
     assert.ok(!/C:\\\\Users\\\\user/.test(text),'Private machine path in '+rel);
   }
 }

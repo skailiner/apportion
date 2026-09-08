@@ -7,11 +7,13 @@
 
 ## Audience and activity
 
-For learners and facilitators comparing how indivisible seats or slots are distributed in proportion to group weights. Start with a real mathematical surprise, then replace the synthetic inputs and examine each rule.
+For organisers and facilitators who need to explain how indivisible places are distributed in proportion to an agreed basis. Start with an example, apply your own groups, see who changes across rules, and share a discussion brief with the exact assumptions. Audience fit is a product hypothesis, not measured adoption.
 
 ## Delivered scope
 
-One working route: bounded editable inputs; explicit immutable tie priorities; three exact methods; quota/seat comparison; all 199 adjacent transitions from 1 to 200 seats; whole-quota/remainder trace or sequential winner/candidate trace; CSV/JSON export; keyboard-labelled controls and responsive layout; local-only page state; two validated WebMCP tools.
+One working route: bounded editable inputs; explicit immutable tie priorities; three exact methods; quota/seat comparison; all 199 adjacent transitions from 1 to 200 seats; whole-quota/remainder trace or sequential winner/candidate trace; CSV/JSON export; keyboard-labelled controls and responsive layout; local-only page state; two WebMCP tools.
+
+Consumer revision: a ref-backed pure workspace controller protects drafts across all mutation paths; file/example replacements are staged and checked against an edit epoch; compact input backups and validated legacy-report reopening recompute outputs; readable group comparisons and a discussion brief preserve context. No private records are sent to a backend. This is deterministic intelligence, not generative AI or a fairness oracle.
 
 ## Sophistication beyond earlier builds
 
@@ -19,8 +21,8 @@ Build 002 separated evidence from inference; Build 003 made a synthetic physical
 
 ## Boundaries
 
-No API, new paid service, account requirement, document upload, electoral advice or automatic social publishing. No claim that this model reproduces a specific election. No hidden random tie-break. No autosave: export is deliberate.
+No API, new paid service, account requirement, backend document upload, electoral advice or automatic social publishing. Local JSON opening is deliberate and bounded to 1 MiB. No claim that this model reproduces a specific election. No hidden random tie-break. No autosave or undo: keep input backups before replacement.
 
 ## Later work, not shipped
 
-Accessible classroom exercises co-designed with educators; import with schema validation and explicit local provenance; additional allocation principles with their own explanations and independent tests. Research and validate any further method before adding it. These are possibilities, not current capabilities.
+Classroom exercises co-designed and tested with educators; optional comparison notebooks; additional allocation principles with their own explanations and independent tests. Research and validate any further method before adding it. These are possibilities, not current capabilities.

@@ -6,14 +6,18 @@ colorTo: indigo
 sdk: static
 app_file: dist/client/index.html
 pinned: false
-short_description: Explore who gets the next seat.
+short_description: Compare allocation rules and share a clear group brief.
 ---
 
 # APPORTION — Who gets the next seat?
 
-Build 004 in the World Builds portfolio. A free, browser-only allocation lab for educators, students and anyone exploring the consequences of proportional rules.
+New here? Read the [plain-language user guide](CONSUMER.md) for a first useful result, examples and important limits.
 
-Edit 2–12 group weights, allocate 1–200 seats, compare Hamilton, D’Hondt/Jefferson and unmodified Sainte-Laguë, inspect the exact arithmetic and scan every adjacent seat total for losses. Download CSV comparisons or JSON with full provenance and the selected allocation trace.
+Share a limited pool of places without hiding how the numbers were chosen. For club organisers, workshop facilitators and learners, APPORTION makes three proportional rules comparable and gives your group a brief it can discuss. Build 004 in the World Builds portfolio; free and browser-only.
+
+Edit 2–12 group weights, allocate 1–200 places, compare Hamilton, D’Hondt/Jefferson and unmodified Sainte-Laguë, inspect exact arithmetic and scan every adjacent total for losses. The group summary identifies whose allocation changes between rules. Download a readable discussion brief, CSV comparison or evidence JSON with the selected allocation trace.
+
+**Save inputs** creates a compact editable backup. **Open saved inputs** accepts that file or a previous APPORTION evidence JSON (up to 1 MiB), validates its configuration and recalculates every output. Unfinished inputs must be applied or explicitly discarded before rules, totals, examples, file opening, browser-agent changes or downloads can proceed. File/example replacements ask for confirmation; cancel preserves the current allocation. There is no undo or automatic saving.
 
 [Try the free public app](https://huggingface.co/spaces/skailiner/apportion) · [GitHub source](https://github.com/skailiner/apportion). Publication status, scope of verification and hosting details: [RELEASE.md](./RELEASE.md).
 
@@ -22,7 +26,7 @@ Edit 2–12 group weights, allocate 1–200 seats, compare Hamilton, D’Hondt/J
 Use Node.js 22.20 or a compatible newer version, with npm.
 
 ```sh
-npm ci
+npm ci --no-audit
 npm run dev -- --host 127.0.0.1 --port 4177
 npm test
 npm run lint:app
@@ -63,9 +67,9 @@ Reviewed 8 September 2026; the app implements the formulas, not contemporary ele
 
 ## Verification and privacy
 
-Eleven mathematical/input/export test groups cover known fixtures, 160 generated cases across all three methods, an independently ranked quotient oracle, scaling and row-order invariance, divisor-prefix behavior over 1–200 seats, full cutoff membership, exact quota bounds, atomic rejection and CSV formula neutralization.
+Eleven mathematical/input/export groups cover known fixtures, 160 generated cases across all three methods, an independently ranked quotient oracle, scaling and row-order invariance, divisor-prefix behavior over 1–200 seats, full cutoff membership, exact quota bounds, atomic rejection and CSV formula neutralization. Eight additional consumer groups cover draft protection, stale replacement guards, input/legacy reopening, misleading imported outputs, portable Unicode and accurate comparison briefs. See TESTING.md and RELEASE.md for the revision’s actual checks.
 
-Both WebMCP tools passed the focused contract check: a multi-field configuration updates the visible app; read-back is unchanged after rejected input; invalid read arguments are rejected. This is not a broad visual, device or assistive-technology audit.
+Both WebMCP tools passed a focused contract check in the original release. The consumer revision adds a shared input guard and exposes pending-draft/dialog status to the read tool; its automated controller checks are not a new live browser contract check or a visual, device or assistive-technology audit.
 
 Inputs exist only in page memory. Reloading resets them. Downloads contain the applied configuration, not unfinished edits. There is no upload or telemetry added by the app; hosting providers may retain normal delivery logs. Do not publish private input records accidentally when sharing downloads.
 
