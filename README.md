@@ -15,7 +15,7 @@ Build 004 in the World Builds portfolio. A free, browser-only allocation lab for
 
 Edit 2–12 group weights, allocate 1–200 seats, compare Hamilton, D’Hondt/Jefferson and unmodified Sainte-Laguë, inspect the exact arithmetic and scan every adjacent seat total for losses. Download CSV comparisons or JSON with full provenance and the selected allocation trace.
 
-Publication status and verified links: [RELEASE.md](./RELEASE.md).
+[Try the free public app](https://huggingface.co/spaces/skailiner/apportion) · [GitHub source](https://github.com/skailiner/apportion). Publication status, scope of verification and hosting details: [RELEASE.md](./RELEASE.md).
 
 ## Run and verify
 
