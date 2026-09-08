@@ -1,5 +1,19 @@
 # Release record
 
+## Consumer revision — 9 September 2026
+
+Released: guarded unfinished inputs, safe compact/legacy JSON reopening, per-group differences across rules and a readable discussion brief. Examples and files require replacement confirmation; cancel preserves the current allocation. Imported output claims are ignored and recalculated from validated inputs. No new account, paid service, automatic saving or undo is implied.
+
+Type check, authored lint, the original 11 model groups and eight consumer groups, both production builds and 18-file artifact checks passed. Independent review checked 240 generated summaries against 720 exact allocation oracles, 480 file round-trips, 240 forged legacy reports, 1,033 rejection and 624 non-mutation checks. Its capacity warning is included in the interface, guide and brief: weights are proportions, not demand caps.
+
+GitHub functional source: bb3452ed523b110c61eb8dbe9f3f6f34e8afa90b.
+Hugging Face functional app/source: 96b12e30ae5194557d8123564fd63dcbeb29113f.
+The Space reported RUNNING at that revision. Anonymous HTML returned 200 and matched the public build after excluding one known provider metadata script. All 11 JavaScript/CSS/icon assets matched byte-for-byte. HTML SHA-256: ab93ad68aec26fbdaa1792b19d004731f31c12d9125f78c3c4236980d1d37d9b.
+
+Current public source removes private hosting identifiers/URLs that appeared in older publication metadata; existing Git history was preserved, not rewritten. No access policy or credentials changed. Historical hashed app assets remain for cached clients. Later receipt-only commits do not alter the verified app. This revision did not receive browser/device or accessibility testing; earlier checks below belong to the original release. No new dependency audit or clean-audit claim is made.
+
+## Original release
+
 Model edition: apportion/v1 · 1.0.0 · 8 September 2026.
 
 - Numerical/input/export tests: 11 groups passed, including 160 generated cases and independent quotient-oracle comparisons.
